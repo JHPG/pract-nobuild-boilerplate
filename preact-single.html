@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script type="module">
+      // ===> Run with `npx live-server` <=====
+      import { h, Component, render } from 'https://unpkg.com/preact?module';
+      import htm from 'https://unpkg.com/htm?module';
+      import { Aa } from './preact-script-aux.js';
+
+      // Initialize htm with Preact
+      const html = htm.bind(h);
+
+      // function App (props) {
+      //   return html`<h1>Hello ${props.name}!</h1>`;
+      // }
+
+      const app = html`
+        <h1>Hello World!</h1>
+        <ul><li>AAAA</li></ul>
+        <${Aa} text="component works!" />
+      `;
+      render(app, document.body);
+    </script>
+  </body>
+</html>
+
