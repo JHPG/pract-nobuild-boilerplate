@@ -1,9 +1,9 @@
 import { html, render } from './deps.js';
-import { Aa } from './components/ComponentTest.js';
+import { Counter } from './components/Counter.js';
 
 const app = html`
-    <h1>Hello World!</h1>
-    <${Aa} text="component works!" />
+    <h1>Hello!</h1>
+    <${Counter} label="The counter works!" />
 `;
 
 render(app, document.body);

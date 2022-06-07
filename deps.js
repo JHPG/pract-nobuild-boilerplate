@@ -1,9 +1,11 @@
-import { h, Component, render } from 'https://unpkg.com/preact?module';
+import { h, Component, render } from 'https://unpkg.com/preact@10.7.3?module';
 
-import htm from 'https://unpkg.com/htm?module';
+// import { useState, useEffect } from 'https://unpkg.com/preact@10.7.3/hooks/dist/hooks.module.js?module'; //FIXME: throws error using this way, use class components instead
+import htm from 'https://unpkg.com/htm@3.1.1?module';
 
-const html = htm.bind(h); // Initialize htm with Preact
+// Initialize htm with Preact
+const html = htm.bind(h);
 
 export {
-    html, h, Component, render,
+    html, Component, render,
 };
